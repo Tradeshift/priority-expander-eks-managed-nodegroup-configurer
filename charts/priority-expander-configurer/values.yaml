@@ -8,3 +8,9 @@ env:
   CLUSTER_AUTOSCALER_NAMESPACE: kube-system
 
 annotations: {}
+
+priorities: |-
+  10:
+  - .*on_demand.*
+  20:
+  - .*spot.*
