@@ -1,5 +1,5 @@
 # Set up a base build container and use to install pip dependencies
-FROM python:3.9-slim-buster as base
+FROM python:3.11-slim-buster as base
 FROM base as builder
 RUN mkdir /install
 WORKDIR /install
